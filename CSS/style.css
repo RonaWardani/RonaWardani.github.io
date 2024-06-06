@@ -42,7 +42,7 @@ body {
 }
 
 .nav-link.active {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /* Hero Section */
@@ -383,6 +383,19 @@ h2{
     background-color: var(--pr-color);
     padding: 0;
   }
+
+  /* .card-container {
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-gagasan {
+    display: inline-block;
+    width: calc(100% / 4); /* Adjust based on how many cards you want visible */
+  } */
+
+  
 
   /* Sosial media atau kontak */
 

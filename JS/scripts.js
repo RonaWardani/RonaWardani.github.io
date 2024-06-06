@@ -1,15 +1,47 @@
 // navbar 
 
+// const navbar = document.getElementsByTagName('nav')[0];
+// window.addEventListener('scroll', function(){
+//   console.log(window.scrollY);
+//   if(window.scrollY > 1) {
+//     navbar.classList.replace('bg-transparent', 'nav-color');
+//   } else if (window.scrollY <= 0) {
+//     navbar.classList.replace('nav-color', 'bg-transparent')
+//   }
+
+// });
+
+// Get the first <nav> element on the page
 const navbar = document.getElementsByTagName('nav')[0];
-window.addEventListener('scroll', function(){
-  console.log(window.scrollY);
-  if(window.scrollY > 1) {
+
+// Define the scroll event handler
+function handleScroll() {
+  if (window.scrollY > 1) {
     navbar.classList.replace('bg-transparent', 'nav-color');
   } else if (window.scrollY <= 0) {
-    navbar.classList.replace('nav-color', 'bg-transparent')
+    navbar.classList.replace('nav-color', 'bg-transparent');
   }
+}
 
-});
+// Define a function to update the navbar background based on screen width
+function updateNavbar() {
+  if (window.innerWidth <= 576) {
+    // When screen width is 576px or less, set navbar to 'nav-color' and remove scroll listener
+    navbar.classList.add('nav-color');
+    navbar.classList.remove('bg-transparent');
+    window.removeEventListener('scroll', handleScroll);
+  } else {
+    // When screen width is greater than 576px, add scroll listener
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Apply the scroll handler logic immediately
+  }
+}
+
+// Initial check
+updateNavbar();
+
+// Add a resize event listener to handle screen size changes
+window.addEventListener('resize', updateNavbar);
 
 
 // profil paslon
@@ -67,6 +99,32 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       this.classList.add('hidden'); // Hide the "Hide" button after hiding the extra cards
       document.getElementById('showMoreButton').classList.remove('hidden'); // Show the "Show More" button
+    });
+  });
+
+
+  // berita
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const cardContainer = document.getElementById('cardContainer');
+    const btnArrowLeft = document.getElementById('btnArrowLeft');
+    const btnArrowRight = document.getElementById('btnArrowRight');
+    
+    const cardWidth = cardContainer.querySelector('.card-gagasan').offsetWidth;
+    const scrollStep = cardWidth + 16; // Adjust based on the width of your cards and margin
+
+    btnArrowRight.addEventListener('click', function() {
+      cardContainer.scrollBy({ 
+        left: scrollStep, 
+        behavior: 'smooth' 
+      });
+    });
+
+    btnArrowLeft.addEventListener('click', function() {
+      cardContainer.scrollBy({ 
+        left: -scrollStep, 
+        behavior: 'smooth' 
+      });
     });
   });
 
