@@ -286,6 +286,12 @@ h2{
     transition: all ease-in-out .3s;
 }
 
+.card:hover .card-body h5{
+    color: #ffffff;
+    transition: all ease-in-out .3s;
+}
+
+
 .card-icon {
     position: absolute;
     right: 0;
@@ -366,34 +372,25 @@ h2{
     opacity: 1;
   }
 
-  .btn-arrow-left {
+  .carousel-control-prev {
     border: none;
     border-radius: 50%;
     width: 55px;
     height: 55px;
     background-color: var(--pr-color);
     padding: 0;
+    z-index: 2;
   }
 
-  .btn-arrow-right {
+  .carousel-control-next {
     border: none;
     border-radius: 50%;
     width: 55px;
     height: 55px;
     background-color: var(--pr-color);
     padding: 0;
+    z-index: 2;
   }
-
-  /* .card-container {
-    overflow-x: hidden;
-    white-space: nowrap;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card-gagasan {
-    display: inline-block;
-    width: calc(100% / 4); /* Adjust based on how many cards you want visible */
-  } */
 
   
 

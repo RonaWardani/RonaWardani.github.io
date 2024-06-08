@@ -49,6 +49,13 @@
     
     }
 
+    .carousel-item .row {
+        flex-wrap: nowrap;
+      }
+      .carousel-item .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
 
    
    
