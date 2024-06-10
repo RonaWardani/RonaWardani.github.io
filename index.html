@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -22,7 +19,7 @@
     <!-- Logo -->
     <link rel="icon" href="Assets/Img/logo.png" type="image/x-icon"/>
 
-    <!-- Fontawesom -->
+    <!-- Fontawesome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -31,7 +28,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
      
-
+    
+     <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     
     <title>IKRARHALTENG2024</title>
@@ -50,7 +51,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#visimisi">Visi Misi</a>
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#visimisi">Visi Misi</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#profil-ikrar">Profil Ikrar</a>
@@ -209,17 +213,17 @@
         <div class="row mt-3">
             <div class="col-md-6 d-flex justify-content-evenly mt-5">
                 <div class="card profile-card profile-card-bupati" id="card-bupati">
-                    <img src="Assets/Img/images.jpeg" class="card-img-top profile-img" alt="Foto Calon Bupati">
+                    <img src="Assets/Img/images.jpeg" class="card-img-top profile-img" alt="Foto Calon Bupati" loading="lazy">
                     <div class="card-body profile-body">
                         <h5 class="card-title profile-title">Dr. Ikram M. Sangadji, M.Si</h5>
                         <p class="card-text profile-text">Dr. Ikram M. Sangadji, M.Si saat ini menjabat sebagai PJ Bupati Kabupaten Halmahera Tengah</p>
-                        <button class="btn btn-primary profile-btn" onclick="showDetails('bupati')">Lihat Selengkapnya</button>
+                        <button class="btn btn-primary profile-btn" onclick="showDetails('bupati')">Lihat Selengkapnya</button> 
                     </div>
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-evenly mt-5">
                 <div class="card profile-card profile-card-wakil" id="card-wakil">
-                    <img src="Assets/Img/foto-arief.jpg" class="card-img-top profile-img" alt="Foto Calon Wakil Bupati">
+                    <img src="Assets/Img/foto-arief.jpg" class="card-img-top profile-img" alt="Foto Calon Wakil Bupati" loading="lazy">
                     <div class="card-body profile-body">
                         <h5 class="card-title profile-title">Ir. Arief Jalaludin, MT</h5>
                         <p class="card-text profile-text">Ir. Arief Jalaludin, MT saat ini menjabat sebagai Kepala Dinas PUPR Kabupaten Halmahera Tengah</p>
@@ -266,10 +270,10 @@
           <div class="row">
             <div class="col-lg-3 col-md-6  d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/ibuhamil.jpg" alt="">
+                <img src="Assets/Img/ibuhamil.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Ibu Hamil</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Ibu Hamil Anak 1 - 4 Sebesar Rp 1 Juta/Bulan/Ibu Hamil <br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Ibu Hamil Anak 1 - 4 Sebesar Rp 1 Juta/Bulan/Ibu Hamil </p>
                 </div>
 
                 <div class="card-icon d-flex justify-content-between px-4">
@@ -283,10 +287,10 @@
 
             <div class="col-lg-3 col-md-6  d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/ibu_menyusui.jpg" alt="">
+                <img src="Assets/Img/ibu_menyusui.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Ibu Menyusui</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Ibu Menyusui Anak 1 - 4 Sebesar Rp. 1 Juta/Bulan/Ibu Menyusui Selama 6 Bulan<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Ibu Menyusui Anak 1 - 4 Sebesar Rp. 1 Juta/Bulan/Ibu Menyusui Selama 6 Bulan</p>
                 </div>
 
                 <div class="card-icon d-flex justify-content-between px-4">
@@ -300,10 +304,10 @@
 
             <div class="col-lg-3 col-md-6  d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/opnamehospital.jpg" alt="">
+                <img src="Assets/Img/opnamehospital.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Perawatan</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Perawatan / Opname di Puskesmas dan RSUD Weda<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Perawatan / Opname di Puskesmas dan RSUD Weda</p>
                 </div>
 
                 <!-- <div class="card-icon d-flex justify-content-between px-4">
@@ -317,10 +321,10 @@
 
             <div class="col-lg-3 col-md-6  d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/pasien.jpg" alt="">
+                <img src="Assets/Img/pasien.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Rujukan</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Rujukan dari RSUD Weda Sebesar 15 Juta/Pasien<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Rujukan dari RSUD Weda Sebesar 15 Juta/Pasien</p>
                 </div>
 
                 <div class="card-icon d-flex justify-content-between px-4">
@@ -338,10 +342,10 @@
           <div class="row">
             <div class="col-lg-3 col-md-6  d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/berduka.jpg" alt="">
+                <img src="Assets/Img/berduka.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Santunan</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Santunan Bagi Keluarga Berduka Sebesar 5 Juta<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Santunan Bagi Keluarga Berduka Sebesar 5 Juta</p>
                 </div>
 
                 <div class="card-icon d-flex justify-content-between px-4">
@@ -355,10 +359,10 @@
 
             <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/pemakamanjenazah.png" alt="">
+                <img src="Assets/Img/pemakamanjenazah.png" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Pemulangan <br><br>Jenazah</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Pemulangan Jenazah dari luar wilyah Halmahera Tengah<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Pemulangan Jenazah dari luar wilyah Halmahera Tengah</p>
                 </div>
 
                 <!-- <div class="card-icon d-flex justify-content-between px-4">
@@ -372,10 +376,10 @@
 
             <div class="col-lg-3 col-md-6  d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/siswa.jpg" alt="">
+                <img src="Assets/Img/siswa.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Seragam</h4>
-                  <p class="mb-4 lh-sm">Bantuan Seragam Sekolah Gratis 3 Pasang dan Sepatu Untuk Siswa TK, SD, SMP/MTs dan SMA/SMK/MA<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Seragam Sekolah Gratis 3 Pasang dan Sepatu Untuk Siswa TK, SD, SMP/MTs dan SMA/SMK/MA</p>
                 </div>
 
                 <div class="card-icon d-flex justify-content-between px-4">
@@ -389,10 +393,10 @@
 
             <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-5">
               <div class="card p-2 myCard" style="width: 20rem;">
-                <img src="Assets/Img/mahasiswa.jpg" alt="">
+                <img src="Assets/Img/mahasiswa.jpg" alt="" loading="lazy">
                 <div class="card-body">
                   <h4>Bantuan Study</h4>
-                  <p class="mb-4 lh-sm">Bantuan Biaya Study S1 (10 Juta), S2 (60 Juta), S3 (100 Juta) dan Kedokteran (300 Juta)<br><br> <span class="text-danger">Selengkapnya</span></p>
+                  <p class="mb-4 lh-sm">Bantuan Biaya Study S1 (10 Juta), S2 (60 Juta), S3 (100 Juta) dan Kedokteran (300 Juta)</p>
                 </div>
 
                 <div class="card-icon d-flex justify-content-between px-4">
@@ -406,13 +410,14 @@
           </div>
 
         </div>
-        <div class="text-center mt-1">
-          <button class="btn btn-primary mt-2" id="showMoreButton">Lihat Kebijakan Lain</button>
-          <button class="btn btn-secondary mt-2 hidden" id="hideButton">Sembunyikan</button>
+       
+        
+        
+      </div>
+      <div class="text-center mt-2">
+        <button class="btn btn-primary" id="showMoreButton">Lihat Kebijakan Lain</button>
+        <button class="btn btn-secondary mt-2 hidden" id="hideButton">Sembuyikan Kebijakan</button>
 
-        </div>
-        
-        
       </div>
       
     </section>
@@ -433,7 +438,7 @@
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card h-100">
-                    <img src="Assets/Img/gagasan/Gagasan1.jpeg" class="card-img-top" alt="Berita 1">
+                    <img src="Assets/Img/gagasan/Gagasan1.jpeg" class="card-img-top" alt="Berita 1" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Kebijakan Yang Berpihak</h5>
                       <p class="card-text">Kebijakan yang berpihak kepada rakyat akan membuahkan hasil yang baik bagi semua. <br> Itulah yang kita rasakandi masa <b>IMS</b> sekarang</p>
@@ -445,7 +450,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="Assets/Img/gagasan/Gagasan2.jpeg" class="card-img-top" alt="Berita 2">
+                    <img src="Assets/Img/gagasan/Gagasan2.jpeg" class="card-img-top" alt="Berita 2" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Pemimpin yang Pintar Merasa</h5>
                       <p class="card-text">Bedakan antar Pemimpin yang meras pintar dan Pintar merasa. Daerah ini butuh yang pintar <b>MERASA</b></p>
@@ -457,7 +462,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="Assets/Img/gagasan/Gagasan3.jpeg" class="card-img-top" alt="Berita 3">
+                    <img src="Assets/Img/gagasan/Gagasan3.jpeg" class="card-img-top" alt="Berita 3" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Selamat Hari Pendidikan</h5>
                       <p class="card-text"><b>Pendidikan</b> adalah senjata paling ampuh yang dapat digunakan untuk megubah dunia</p>
@@ -473,7 +478,7 @@
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card h-100">
-                    <img src="Assets/Img/gagasan/Gagasan4.jpeg" class="card-img-top" alt="Berita 4">
+                    <img src="Assets/Img/gagasan/Gagasan4.jpeg" class="card-img-top" alt="Berita 4" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Fagogoru</h5>
                       <p class="card-text"><b>Fagogoru</b> itu tentang sikap, perilaku, moral dan etika bukan sekedar kata-kata kosong. <br>Mari kita tunjukkan itu dalam pergaulan sosial, politik dan pemerintahan kita</p>
@@ -485,7 +490,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="Assets/Img/gagasan/Gagasan5.jpeg" class="card-img-top" alt="Berita 5">
+                    <img src="Assets/Img/gagasan/Gagasan5.jpeg" class="card-img-top" alt="Berita 5" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Hidup Adalah Perjalanan</h5>
                       <p class="card-text">Hiidup adalah perjalanan, bukan tujuan, mari menjaga diri dalam Perjalanan ini</p>
@@ -497,7 +502,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="Assets/Img/gagasan/Gagasan6.jpeg" class="card-img-top" alt="Berita 6">
+                    <img src="Assets/Img/gagasan/Gagasan6.jpeg" class="card-img-top" alt="Berita 6" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Selamat Hari Buruh</h5>
                       <p class="card-text">Kobarkan semangat juang para buruh! Bersama, kita ciptakan dunia kerja yang lebi adil dan sejahtera</p>
@@ -548,9 +553,9 @@
                         <h5 class="candidate-title">Dr. Ikram M. Sangadji, M.Si</h5>
                         <p class="sosmed-text">Sosial Media</p>
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/profile.php?id=100012791892433&locale=id_ID" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-x"></i></a>
+                            <a href="https://www.instagram.com/ikisangadji30/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -563,7 +568,7 @@
                         <p class="sosmed-text">Sosial Media</p>
                         <div class="social-icons">
                             <a href="https://web.facebook.com/profile.php?id=61559205863620" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-x"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
@@ -585,18 +590,19 @@
             </div>
 
             <div class="col-md-5 d-flex justify-content-evenly ">
-              <a href="">Visi Misi</a>
-              <a href="">Profil Ikrar </a>
-              <a href="">Kebijakan</a>
-              <a href="">Berita</a>
-              <a href="">Sosial Media</a>
+              <a href="#visimisi">Visi Misi</a>
+              <a href="#profil-ikrar">Profil Ikrar </a>
+              <a href="#kebijakan">Kebijakan</a>
+              <a href="#berita">Berita</a>
+              <a href="#sosial-media">Sosial Media</a>
 
             </div>
           </div>
 
           <div class="row position-absolute copyright start-50 translate-middle">
             <div class="col-md-12">
-              <p>Copyright PT Rona Wardani Teknologi 2024</p>
+              
+              <p> Copyright PT Rona Wardani Teknologi 2024</p>
             </div>
           </div>
         </div>

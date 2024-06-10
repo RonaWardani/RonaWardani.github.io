@@ -50,7 +50,7 @@ function showDetails(role) {
   let title, content;
   if (role === 'bupati') {
       title = "Dr. Ikram M Sangadji, M.Si";
-      content = "Dr. Ikram M. Sangadji, M.Si saat ini menjabat sebagai PJ Bupati Kabupaten Halmahera Tengah";
+      content = "Dr. Ikram M. Sangadji, M.Si saat ini menjabat sebagai PJ Bupati Kabupaten Halmahera Tengah. Sebelum menjabat sebagai PJ Bupati Kabupaten Halmahera Tengah, Ikram M Sangadji menjabat sebagai Asisten Deputi Pengelolaan Perikanan Tangkap pada Deputi Bidang Koordinasi Sumber Daya Maritim Kementrian Koordinator Bidang Kemaritiman dan Investasi Republik Indonesia";
   } else if (role === 'wakil') {
       title = "Ir. Arief Jalaludin, MT";
       content = "Ir. Arief Jalaludin, MT saat ini menjabat sebagai Kepala Dinas PUPR Kabupaten Halmahera Tengah";
@@ -58,6 +58,9 @@ function showDetails(role) {
 
   document.getElementById('modalTitle').innerText = title;
   document.getElementById('modalBody').innerText = content;
+
+  
+
   var profileModal = new bootstrap.Modal(document.getElementById('profileModal'));
   profileModal.show();
 }
