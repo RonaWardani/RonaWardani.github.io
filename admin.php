@@ -96,7 +96,7 @@ $berita = query("SELECT * FROM berita ORDER BY tanggal DESC");
           <button class="btn btn-primary profile-btn"><a style="color: white; text-decoration: none; "
               href="upload">Upload Berita Terbaru</a></button><br>
               <div class="container mt-2">
-    <a href="index.php" class="btn btn-secondary btn-back-to-index">Kembali ke Halaman Utama</a>
+    <a href="index" class="btn btn-secondary btn-back-to-index">Kembali ke Halaman Utama</a>
   </div>
         </div>
       </div>
