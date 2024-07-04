@@ -513,12 +513,5 @@ footer a {
     font-weight: bold;
 }
 
-.btn-admin {
-    background-color: #000000;
-}
 
-.btn-admin:hover {
-    color: #2f65c2;
-    border-radius: 10px;
-}
 

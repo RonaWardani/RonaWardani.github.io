@@ -90,7 +90,7 @@ if( isset($_POST["upload"]) ) {
         Upload Berita
       </h2>
 
-      <button  class="btn btn-primary profile-btn"><a style="color: white; text-decoration: none; " href="admin.php">Kembali ke Admin</a></button> 
+      <button  class="btn btn-primary profile-btn"><a style="color: white; text-decoration: none; " href="admin">Kembali ke Admin</a></button> 
     </div>
   </div>
 
