@@ -13,3 +13,10 @@ body {
 h2 {
     color: #0056b3;
 }
+
+.btn-back-to-index {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}

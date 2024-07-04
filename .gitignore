@@ -1,0 +1,6 @@
+# Ignore folder secrets
+#Assets/Img/gagasan/
+# Ignore config.php file
+#function.php
+
+# You can add other files or folders to ignore

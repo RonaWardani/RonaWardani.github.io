@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION["login"])) {
-  header("Location: login.php");
+  header("Location: login");
   exit;
 }
 
@@ -82,6 +82,8 @@ $berita = query("SELECT * FROM berita ORDER BY tanggal DESC");
     </div>
   </nav>
 
+
+
   <section id="visimisi">
 
     <div class="container">
@@ -92,7 +94,10 @@ $berita = query("SELECT * FROM berita ORDER BY tanggal DESC");
           </h2>
 
           <button class="btn btn-primary profile-btn"><a style="color: white; text-decoration: none; "
-              href="upload.php">Upload Berita Terbaru</a></button>
+              href="upload">Upload Berita Terbaru</a></button><br>
+              <div class="container mt-2">
+    <a href="index.php" class="btn btn-secondary btn-back-to-index">Kembali ke Halaman Utama</a>
+  </div>
         </div>
       </div>
 

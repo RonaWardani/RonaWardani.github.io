@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+ # Redirect /index to root
+RewriteRule ^index$ / [R=301,L]
+
+# Redirect to index.php for requests to the root directory
+DirectoryIndex index.php
+</IfModule>

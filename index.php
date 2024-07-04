@@ -470,54 +470,57 @@ $berita = query("SELECT * FROM berita ORDER BY tanggal DESC");
 
   <section id="berita" class="mt-5">
     <div class="container position-relative">
-        <h2 class="text-center mb-5">Berita Terbaru</h2>
-        <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+      <h2 class="text-center mb-5">Berita Terbaru</h2>
+      <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <?php
+          $totalBerita = count($berita);
+          $beritaPerPage = 3; // Jumlah berita per halaman carousel
+          $numPages = ceil($totalBerita / $beritaPerPage);
+
+          for ($page = 0; $page < $numPages; $page++):
+            $isActive = $page == 0 ? 'active' : '';
+            ?>
+            <div class="carousel-item <?= $isActive; ?>">
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
                 <?php
-                $totalBerita = count($berita);
-                $beritaPerPage = 3; // Jumlah berita per halaman carousel
-                $numPages = ceil($totalBerita / $beritaPerPage);
+                $start = $page * $beritaPerPage;
+                $end = min(($start + $beritaPerPage), $totalBerita);
 
-                for ($page = 0; $page < $numPages; $page++):
-                    $isActive = $page == 0 ? 'active' : '';
-                ?>
-                    <div class="carousel-item <?= $isActive; ?>">
-                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-                            <?php
-                            $start = $page * $beritaPerPage;
-                            $end = min(($start + $beritaPerPage), $totalBerita);
-
-                            for ($i = $start; $i < $end; $i++):
-                                $row = $berita[$i];
-                            ?>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="Assets/Img/gagasan/<?= $row["gambar"]; ?>" class="card-img-top" alt="Berita <?= $i + 1; ?>" loading="lazy">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><?= $row["judul"]; ?></h5>
-                                            <p class="card-text"><?= $row["deskripsi"]; ?></p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <small class="text-muted"><?= $row["tanggal"]; ?></small>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endfor; ?>
-                        </div>
+                for ($i = $start; $i < $end; $i++):
+                  $row = $berita[$i];
+                  ?>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="Assets/Img/gagasan/<?= $row["gambar"]; ?>" class="card-img-top" alt="Berita <?= $i + 1; ?>"
+                        loading="lazy">
+                      <div class="card-body">
+                        <h5 class="card-title"><?= $row["judul"]; ?></h5>
+                        <p class="card-text"><?= $row["deskripsi"]; ?></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"><?= $row["tanggal"]; ?></small>
+                      </div>
                     </div>
+                  </div>
                 <?php endfor; ?>
+              </div>
             </div>
-
-            <button class="carousel-control-prev position-absolute start-0 top-50 translate-middle-y" type="button" data-bs-target="#beritaCarousel" data-bs-slide="prev">
-                <img src="Assets/Img/arrowleft.png" alt="">
-            </button>
-
-            <button class="carousel-control-next position-absolute end-0 top-50 translate-middle-y" type="button" data-bs-target="#beritaCarousel" data-bs-slide="next">
-                <img src="Assets/Img/arrow.png" alt="">
-            </button>
+          <?php endfor; ?>
         </div>
+
+        <button class="carousel-control-prev position-absolute start-0 top-50 translate-middle-y" type="button"
+          data-bs-target="#beritaCarousel" data-bs-slide="prev">
+          <img src="Assets/Img/arrowleft.png" alt="">
+        </button>
+
+        <button class="carousel-control-next position-absolute end-0 top-50 translate-middle-y" type="button"
+          data-bs-target="#beritaCarousel" data-bs-slide="next">
+          <img src="Assets/Img/arrow.png" alt="">
+        </button>
+      </div>
     </div>
-</section>
+  </section>
 
 
   <!-- Kontak -->
@@ -571,7 +574,7 @@ $berita = query("SELECT * FROM berita ORDER BY tanggal DESC");
         <div class="row">
           <div class="col-md-7 d-flex align-items-center justify-content-lg-start  justify-content-center">
             <img src="Assets/Img/logo.png" alt="" width="40">
-            <a href="" class="ms-2">IKRARHALTENG2024</a>
+            <a href="admin" class="ms-2">IMSAJa</a>
           </div>
 
           <div class="col-md-5 d-flex justify-content-evenly ">
@@ -590,6 +593,8 @@ $berita = query("SELECT * FROM berita ORDER BY tanggal DESC");
             <p> Copyright PT Rona Wardani Teknologi 2024</p>
           </div>
         </div>
+
+        
       </div>
     </div>
   </footer>

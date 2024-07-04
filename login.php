@@ -51,7 +51,7 @@ if (isset($_POST["login"])) {
 
             }
 
-            header("Location: admin.php");
+            header("Location: admin");
             exit;
         }
     }
@@ -109,6 +109,13 @@ if (isset($_POST["login"])) {
 </head>
 
 <body>
+
+     <!-- Tombol kembali ke halaman utama -->
+    <div class="container mt-5">
+    <a href="index" class="btn btn-secondary btn-back-to-index">Kembali ke Halaman Utama</a>
+    </div>
+    
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -142,6 +149,7 @@ if (isset($_POST["login"])) {
                             <input type="text" id="invitation_code" name="invitation_code" class="form-control" required>
                         </div> -->
                         <button type="submit" name="login" class="btn btn-primary btn-block">Login</button>
+                        
                     </form>
                 </div>
             </div>

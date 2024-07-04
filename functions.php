@@ -2,7 +2,11 @@
 
 //koneksi ke database
 
-$conn = mysqli_connect("localhost", "root", "", "imsaja");
+//$conn = mysqli_connect("localhost", "root", "", "imsaja");
+
+//koneksi databse hosting
+
+$conn = mysqli_connect("localhost", "u796639436_imsaja", "Imsaja27", "u796639436_imsaja");
 
 function query($query)
 {
