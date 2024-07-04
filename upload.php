@@ -22,7 +22,7 @@ if( isset($_POST["upload"]) ) {
         echo "
             <script>
                 alert('Data Berhasil di Upload');
-                document.location.href = 'admin.php';
+                document.location.href = 'admin';
             </script>
         
         ";
@@ -30,7 +30,7 @@ if( isset($_POST["upload"]) ) {
         echo "
               <script>
                 alert('Data Gagal di Upload');
-                document.location.href = 'admin.php';
+                document.location.href = 'admin';
             </script>
         ";
     }
